@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "bootstrap_handson",
   "version": "1.0.0",
   "description": "coursera bootstrap learning course ",
   "main": "index.html",
@@ -22,6 +22,7 @@
     "lite-server": "^2.5.4"
   },
   "dependencies": {
+    "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
