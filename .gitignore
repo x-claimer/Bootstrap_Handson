@@ -7,3 +7,5 @@ images-to-submit/a1/FullPageCapture-SM-XL.png
 .idea/modules.xml
 .idea/Bootstrap.iml
 .idea/workspace.xml
+node_modules
+package-lock.json
