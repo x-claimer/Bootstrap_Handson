@@ -4,10 +4,12 @@
   "description": "coursera bootstrap learning course ",
   "main": "index.html",
   "scripts": {
-    "start": "npm run live",
+    "start": "npm run watch:para-all",
     "test": "echo \"Error: no test specified\" && exit 1",
     "live": "live-server --port=9000",
-    "scss": "node-sass -o css/ css/"
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:para-all": "parallelshell \"npm run watch:scss\" \"npm run live\""
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,10 @@
   },
   "homepage": "https://github.com/x-claimer/Bootstrap#readme",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
@@ -29,7 +34,6 @@
     "jquery": "^3.5.1",
     "less": "^3.12.2",
     "mdbootstrap": "^4.19.1",
-    "node-sass": "^4.14.1",
     "popper.js": "^1.16.1"
   }
 }
