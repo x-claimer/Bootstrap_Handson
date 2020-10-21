@@ -15,7 +15,6 @@
     "imgemin": "imagemin img/* -o dist/img",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run copyfonts && npm run imgemin && npm run usemin"
-
   },
   "repository": {
     "type": "git",
@@ -29,12 +28,18 @@
   "homepage": "https://github.com/x-claimer/Bootstrap#readme",
   "devDependencies": {
     "cssmin": "^0.4.3",
+    "grunt": "^1.3.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
     "htmlmin": "0.0.7",
+    "jit-grunt": "^0.10.0",
     "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
     "onchange": "^7.0.2",
     "parallelshell": "^3.0.1",
     "rimraf": "^3.0.2",
+    "time-grunt": "^2.0.0",
     "uglifyjs": "^2.4.11",
     "usemin-cli": "^0.6.0"
   },
