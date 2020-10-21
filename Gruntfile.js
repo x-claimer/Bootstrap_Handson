@@ -139,7 +139,7 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'dist/contactus.html':'dist/contactus.html',
-                    'dist/aboutus.html':'dist/abouttus.html',
+                    'dist/aboutus.html':'dist/aboutus.html',
                     'dist/index.html':'dist/index.html'
                 }
             }
